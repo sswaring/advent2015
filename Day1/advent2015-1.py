@@ -16,9 +16,12 @@ for x in route:
 # What floor does Santa end up on?
 print("Part 1 answer:", floor)
 
+# initialize variables
 floor = 0
 position = 0
 
+# run until floor < 0
+# add to position variable after every move
 for x in route:
     if x == "(":
         floor += 1
@@ -31,5 +34,6 @@ for x in route:
         if floor < 0:
             break
 
+# At what position does Santa arrive at floor -1?
 print("Part 2 answer:", position)
 
